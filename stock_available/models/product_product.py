@@ -67,7 +67,7 @@ class ProductProduct(models.Model):
     )
 
     def _get_search_immediately_usable_qty_domain(self):
-        return [("type", "=", "product")]
+        return [("type", "=", "consu")]
 
     @api.model
     def _search_immediately_usable_qty(self, operator, value):
